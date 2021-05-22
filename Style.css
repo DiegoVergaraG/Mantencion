@@ -6,12 +6,12 @@
     border: 1px solid white;
 }
 body{
+    background-image: url("Fabrica.jpg");
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(141, 145, 185, 0.616);
-    background-image: url("Fabrica.jpg");
-    background-size: 100em 50em;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
+    background-size: cover;
     
 }
 h1{  
@@ -34,7 +34,7 @@ h1{
     
 }
 a {
-    color: rgb(4, 28, 245);
+    color: rgb(0, 1, 12);
 }
 h3 {
     color: rgb(255, 0, 0);
@@ -53,10 +53,10 @@ h3 {
     border: 1px solid #0f0f0e;
     margin: 2px;
     padding: 5px 20px;
-    background: #f5f264;
+    background: #37346b;
 }
 .navigation-item:hover {
-    background: rgb(231, 238, 231);
+    background: rgb(221, 192, 30);
 }
 .navigation-item {
     font-size: 16px;
@@ -70,6 +70,7 @@ h3 {
   transition: all 0.5s;
 }
 footer{
+    color: white;
     margin-top:18%;
     border-top:solid 1px white;
     padding-top: 20px;
