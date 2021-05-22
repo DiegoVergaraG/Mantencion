@@ -1,12 +1,22 @@
+*{box-sizing: border-box;}
+.menu{
+    float: left;
+    width:25%;
+    padding:15px;
+    border: 1px solid white;
+}
 body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(141, 145, 185, 0.616);
     background-image: url("Fabrica.jpg");
-    background-size: 1800px 800px;
+    background-size: 100em 50em;
     background-repeat: no-repeat;
     background-attachment: scroll;
     
 }
-header{  
+h1{  
+    text-align: center;
+    color: rgb(250, 6, 6);
     background: repeating-linear-gradient(
         45deg,
         yellow 0px,
@@ -18,22 +28,16 @@ header{
     top: 0em;
     position: relative;
 }
-h1 {
-    text-decoration: underline;
-    padding-top: 1em;
-   text-align: center; 
-   color: rgb(30, 14, 245);
+.first {
+    border: 1px solid white;
+    padding: 15px;
+    
 }
 a {
     color: rgb(4, 28, 245);
 }
-
-nav li {
-    display: inline;
-    margin-left: 10%;
-}
 h3 {
-    color: blue;
+    color: rgb(255, 0, 0);
     padding-left: 2%;
 }
 .nav-item{
