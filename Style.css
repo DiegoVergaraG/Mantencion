@@ -1,4 +1,8 @@
-*{box-sizing: border-box;}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 .menu{
     float: left;
     width:25%;
@@ -53,7 +57,7 @@ h3 {
     border: 1px solid #0f0f0e;
     margin: 2px;
     padding: 5px 20px;
-    background: #37346b;
+    background: #4e4b8b;
 }
 .navigation-item:hover {
     background: rgb(221, 192, 30);
