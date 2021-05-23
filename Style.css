@@ -10,6 +10,7 @@
     border: 1px solid white;
 }
 body{
+    
     background-image: url("Fabrica.jpg");
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(141, 145, 185, 0.616);
@@ -18,6 +19,109 @@ body{
     background-size: cover;
     
 }
+.neon {
+    position: relative;
+    display: inline-block;
+    padding: 2px 5px;
+    margin-top: 2px;
+    color: #f05844;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+  }
+.neon:hover {
+    background: #f34e38;
+    color: #050801;
+    box-shadow: 0 0 5px #f84040, 0 0 25px #f84040, 0 0 50px #f84040, 0 0 200px #f84040;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  }
+.neon:nth-child(1) {
+    filter: hue-rotate(270deg);
+  }
+.neon:nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+.neon span {
+    position: absolute;
+    display: block;
+  }
+
+.neon span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fd3503);
+    animation: animate1 1s linear infinite;
+  }
+  @keyframes animate1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  .neon span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f75538);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  @keyframes animate2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  .neon span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f53131);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  @keyframes animate3 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+  
+  .neon span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f73939);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+  @keyframes animate4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }  
+
 h1{  
     text-align: center;
     color: rgb(250, 6, 6);
@@ -40,10 +144,7 @@ h1{
 a {
     color: rgb(0, 1, 12);
 }
-h3 {
-    color: rgb(255, 0, 0);
-    padding-left: 2%;
-}
+
 .nav-item{
     padding-top: 8%;
 }
@@ -60,7 +161,7 @@ h3 {
     background: #4e4b8b;
 }
 .navigation-item:hover {
-    background: rgb(221, 192, 30);
+    background: rgb(219, 243, 6);
 }
 .navigation-item {
     font-size: 16px;
@@ -72,6 +173,8 @@ h3 {
   font-size: 20px;
   font-weight: 600;
   transition: all 0.5s;
+  box-shadow: 0 0 5px #cbf805, 0 0 25px #cbf805, 0 0 50px #cbf805, 0 0 200px #cbf805;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 footer{
     color: white;
