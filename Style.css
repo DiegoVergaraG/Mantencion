@@ -7,12 +7,15 @@
 body{
     
     background-image: url("Fabrica.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: rgba(141, 145, 185, 0.616);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
+  
+  
+  }
 .neon {
     position: relative;
     display:inline-block;
